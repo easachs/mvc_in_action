@@ -1,3 +1,5 @@
 <% @comedians.each do |comic| %>
-<h4><%= comic.specials.count %> Specials</h4>
+<h4><%= comic.total_specials %> Specials</h4>
 <% end %>
+
+<p><%= @comedians.average_age.round(2) %> Years</p>
